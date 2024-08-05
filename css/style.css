@@ -185,6 +185,9 @@ header .description__hero p {
   margin-inline: 1.8rem;
   margin-bottom: 2rem;
 }
+header .description__hero button {
+  margin-bottom: 2rem;
+}
 header .description__hero .bg-pattern-1 {
   position: absolute;
   top: -1%;
