@@ -27,7 +27,7 @@ header{
         order: 2;
         text-align: center;
         position: relative;
-
+        padding-bottom: 2rem;
 
         h1{
             margin-top: 5rem;
@@ -46,12 +46,10 @@ header{
             font-size: 1.150rem;
             line-height: 1.5;
             margin-inline: 1.8rem;
-            margin-bottom: 2rem;
+            margin-bottom: 1.8rem;
         }
 
-        button{
-            margin-bottom: 2rem;
-        }
+        
 
         .bg-pattern-1{
             position: absolute;
@@ -79,7 +77,25 @@ header{
             }
 }
 
+@media screen and (max-width:351px){
+    header{
+        .description__hero{
+            margin-bottom: 1rem;
+        }
 
+        .bg-pattern-2{
+            position: absolute;
+            bottom: -70%;
+            right:0%;
+            background-image: url(../images/bg-pattern-intro-right-mobile.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 130px;
+            height: 400px;
+            opacity: .8;
+            }
+    }
+}
 
 
 

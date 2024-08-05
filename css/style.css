@@ -57,7 +57,7 @@
 }
 .navbar .nav__menu {
   border: 1px solid black;
-  margin-right: 1.3rem;
+  margin-right: 1rem;
 }
 .navbar .nav__menu i {
   cursor: pointer;
@@ -167,6 +167,7 @@ header .description__hero {
   order: 2;
   text-align: center;
   position: relative;
+  padding-bottom: 2rem;
 }
 header .description__hero h1 {
   margin-top: 5rem;
@@ -183,10 +184,7 @@ header .description__hero p {
   font-size: 1.15rem;
   line-height: 1.5;
   margin-inline: 1.8rem;
-  margin-bottom: 2rem;
-}
-header .description__hero button {
-  margin-bottom: 2rem;
+  margin-bottom: 1.8rem;
 }
 header .description__hero .bg-pattern-1 {
   position: absolute;
@@ -210,6 +208,22 @@ header .bg-pattern-2 {
   opacity: 0.8;
 }
 
+@media screen and (max-width: 351px) {
+  header .description__hero {
+    margin-bottom: 1rem;
+  }
+  header .bg-pattern-2 {
+    position: absolute;
+    bottom: -70%;
+    right: 0%;
+    background-image: url(../images/bg-pattern-intro-right-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 400px;
+    opacity: 0.8;
+  }
+}
 @media (min-width: 768px) and (max-width: 1023px) {
   header .description__hero h1 {
     margin-top: 8rem;
@@ -324,7 +338,7 @@ header .bg-pattern-2 {
   text-align: center;
   width: 100vw;
   max-height: 100vh;
-  margin-bottom: 20rem;
+  margin-bottom: 25rem;
 }
 .different h2 {
   font-size: 3rem;
@@ -353,6 +367,11 @@ header .bg-pattern-2 {
   font-weight: 500;
 }
 
+@media screen and (max-width: 351px) {
+  .different {
+    margin-bottom: 30rem;
+  }
+}
 @media (min-width: 1024px) and (max-width: 2325px) {
   .different {
     text-align: start;
@@ -583,6 +602,13 @@ header .bg-pattern-2 {
   margin-bottom: 3.2rem;
 }
 
+@media screen and (max-width: 338px) {
+  .styled-hr {
+    background-color: rgb(255, 255, 255);
+    max-width: 250px;
+    margin-bottom: 3.2rem;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer {
     position: relative;

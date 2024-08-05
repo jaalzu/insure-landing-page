@@ -112,6 +112,14 @@
     margin-bottom: 3.2rem;
 }
 
+@media screen and (max-width: 338px){
+    .styled-hr{
+        background-color: rgb(255, 255, 255);
+        max-width: 250px;
+        margin-bottom: 3.2rem;
+    }
+}
+
 
 @media screen and (min-width: 768px){
     .footer{
