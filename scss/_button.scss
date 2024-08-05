@@ -1,0 +1,39 @@
+button{
+    background-color: transparent;
+    display: block;
+    font-weight: 600;
+    width: 100%;
+    padding-block: .8rem;
+    border: 1px solid $very-light-gray;
+    letter-spacing: 1.2px;
+    font-size: 1.1rem;
+    outline: none;
+    color: $very-light-gray;
+    font-family: $font-family-body;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: ease .4s;
+    z-index: 1000000;
+
+    &:hover{
+        color: $very-light-gray;
+        background-color: black;
+    }
+}
+
+.btn__nav{
+    width: 90vw;
+}
+
+.btn__plans{
+    color: white;
+    border: 2px solid white;
+    width: 50%;
+    margin: 0 auto;
+    
+    &:hover{
+        background-color: white;
+        color: black;
+    }
+}
+

@@ -1,0 +1,185 @@
+
+.footer{
+    position: relative;
+    display: grid;
+    place-content: center;
+    width: 100%;
+    margin-top: 10rem;
+    background-color: $grayish-blue;
+    height: 100%;
+    padding-bottom: 4rem;
+
+
+    .footer__nav{
+        z-index: 10000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 6rem;
+        margin-bottom: 3rem;
+
+
+            
+            .socials__list{
+                    list-style: none;
+                    display: flex;
+                    margin-top: 1.8rem;
+                    gap: 1.1rem;
+                    align-items: center;
+                    justify-content: center;
+
+
+                    // hover de los links //
+                        li {
+                            a{
+                                img{
+                                    transition: filter 0.3s ease;
+                                
+                                    &:hover{
+                                        filter: brightness(0);
+                                    }
+                             }
+                          }
+                       }
+                    }
+                     // aca termina el hover //
+    }
+
+
+    .footer__links{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-content: center;
+        text-align: center;
+        gap: 2rem;
+        font-family: $font-family-body;
+        text-transform: uppercase;
+        z-index: 10000;
+        
+
+            .col__links{
+
+
+                span{
+                    color: $dark-grayish-violet;
+                    font-size: 1.050rem;
+                    font-weight: $font-weight-600;
+                }
+
+
+                ul{
+                    list-style: none;
+                    margin-top: 2.5rem;
+                    }
+
+
+                    li{
+                        margin-block: 1rem;
+                       }
+
+
+                        li a{
+                            color: $very-dark-violet;
+                            font-weight: $font-weight-600;
+                            text-decoration: none;
+                            font-size: 1.050rem;
+
+
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+            }
+    }
+
+
+
+    .bg-pattern-footer{
+        background-image: url(../images/bg-pattern-footer-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+}
+
+.styled-hr{
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    margin-bottom: 3.2rem;
+}
+
+
+@media screen and (min-width: 768px){
+    .footer{
+        position: relative;
+        place-content: initial;
+
+
+        .footer__nav{
+            padding-inline: 5.2rem;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 4rem;
+            
+
+            .socials__list{
+                margin-top: .1rem;
+                          }
+        }
+
+
+        .footer__links{
+            grid-template-columns: repeat(4,1fr);
+            text-align: initial;
+            margin-left: 5rem;
+            gap: 1rem;
+                      }
+
+
+        .bg-pattern-footer{
+            background-image: url(../images/bg-pattern-footer-desktop.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: left;
+            width: 100%;
+            height: 50%;
+            top: 0%;
+            position: absolute;
+        }
+    }
+
+
+    .styled-hr{
+        background-color: rgb(255, 255, 255);
+        width: 88%;
+        margin-left: 4rem;
+    }
+}
+
+
+@media screen and (min-width:1342px){
+    footer{
+
+
+        .styled-hr{
+            background-color: rgb(255, 255, 255);
+            width: 90%;
+            margin-left: 4rem;
+        }
+    }
+}
+@media screen and (min-width:1642px){
+    footer{
+
+
+        .styled-hr{
+            background-color: rgb(255, 255, 255);
+            width: 93%;
+            margin-left: 4rem;
+        }
+    }
+}

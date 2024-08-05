@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400&family=Karla:wght@400;700&display=swap');
+@import 'variables';
+@import 'navbar';
+@import 'button';
+@import 'hero';
+@import 'mixins';
+@import 'different';
+@import 'how_we_work';
+@import 'footer';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4{
+    font-family: $font-family-display;
+    position: relative;
+}
+
+@media screen and (min-width:550px){
+
+    h1::before,h2::before{
+    }
+}
+
+@media screen and (max-width:780px){
+    h2::before{
+        @include heading-after;
+    }
+}
+
+p{
+    font-family: $font-family-body;
+}
+
+body{
+    background-color: $very-light-gray;
+    
+}
+html {
+    overflow-x: hidden;
+  }
+
+.container{
+    padding-inline: 1.5rem;
+    width: 100%;
+}
+

@@ -1,0 +1,9 @@
+@mixin heading-after {
+    content: '';
+    width: 120px;
+    height: 1px;
+    background-color: $dark-grayish-violet;
+    position: absolute;
+    top: -60%;
+    right: 33%;
+  }
