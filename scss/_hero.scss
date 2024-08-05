@@ -7,7 +7,7 @@ header{
    position: relative;
    min-height: 100vh;
    background-color: $dark-violet;
-   margin-bottom: 12rem;
+   margin-bottom: 15rem;
 
    
     .img__hero{
@@ -23,7 +23,7 @@ header{
 
 
     .description__hero{
-        min-height: 55vh;
+        min-height: 58vh;
         order: 2;
         text-align: center;
         position: relative;
@@ -65,7 +65,7 @@ header{
 
         .bg-pattern-2{
             position: absolute;
-            bottom: -50%;
+            bottom: -60%;
             right:0%;
             background-image: url(../images/bg-pattern-intro-right-mobile.svg);
             background-size: contain;

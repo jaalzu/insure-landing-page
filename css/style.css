@@ -153,7 +153,7 @@ header {
   position: relative;
   min-height: 100vh;
   background-color: hsl(256, 26%, 20%);
-  margin-bottom: 12rem;
+  margin-bottom: 15rem;
 }
 header .img__hero {
   width: 100%;
@@ -163,7 +163,7 @@ header .img__hero img {
   width: 100%;
 }
 header .description__hero {
-  min-height: 55vh;
+  min-height: 58vh;
   order: 2;
   text-align: center;
   position: relative;
@@ -197,7 +197,7 @@ header .description__hero .bg-pattern-1 {
 }
 header .bg-pattern-2 {
   position: absolute;
-  bottom: -50%;
+  bottom: -60%;
   right: 0%;
   background-image: url(../images/bg-pattern-intro-right-mobile.svg);
   background-size: contain;
