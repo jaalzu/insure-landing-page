@@ -18,11 +18,7 @@ h1,h2,h3,h4{
     position: relative;
 }
 
-@media screen and (min-width:550px){
 
-    h1::before,h2::before{
-    }
-}
 
 @media screen and (max-width:780px){
     h2::before{
